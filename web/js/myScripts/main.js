@@ -53,6 +53,7 @@ $(document).ready(function () {
         var hub1 = hub.value;
         var item1 = item.value;
         getURL(item1, hub1);
+        getMineralURL(hub1);
         Calc();
     };
 
