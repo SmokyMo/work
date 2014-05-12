@@ -3,10 +3,30 @@
  *  on 18.Март.2014 12:46
  */
 
-function itemDB() {
+function astero () {
+    var trit1 = $('#trit').val();
+    var pyer1 = $('#pyer').val();
+    var mex1 = $('#mex').val();
+    var iso1 = $('#iso').val();
+    var noc1 = $('#noc').val();
+    var zyd1 = $('#zyd').val();
+    var meg1 = $('#meg').val();
+
+    var s = parseInt (trit1*23782 + pyer1*7964 + mex1*2794 + iso1*462 + noc1*40 + zyd1*9 + meg1*2);
+    itemDB(s);
+
+    alert(s);
+
+}
+
+function itemDB(s) {
     var sisCore = {itemID: "28758", otherID: "17938", lpCost: "14400", iskCost: "9600000"};
     var sisExp = {itemID: "28756", otherID: "18639", lpCost: "14400", iskCost: "9600000"};
-    var sisAstero = {itemID: "33468", otherCost: "700000", lpCost: "30000", iskCost: "15000000"};
+    var sisAstero = {itemID: "33468",
+                     lpCost: "30000",
+                     iskCost: "15000000",
+                     otherCost: "'" + s + "'"
+                    };
     return {
         "28758": sisCore,
         "28756": sisExp,
