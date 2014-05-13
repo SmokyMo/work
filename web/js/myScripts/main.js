@@ -26,7 +26,7 @@ $(document).ready(function () {
                                 disabled: false}).on('select', function () {
         $("#item").jqxDropDownList({ disabled: false });
 
-        getIDs();
+        getIDs()
     });
 
 
