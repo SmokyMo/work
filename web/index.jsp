@@ -20,14 +20,39 @@
     <script type="text/javascript" charset="UTF-8" src="js/myScripts/itemDB.js"></script>
     <script type="text/javascript" charset="UTF-8" src="js/myScripts/XMLscripts.js"></script>
     <script type="text/javascript" charset="UTF-8" src="js/myScripts/CalculatingScript.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="js/myScripts/MineralPrice.js"></script>
 
     <link rel="stylesheet" charset="utf-8" href="css/jqxStyles/styles/jqx.base.css"/>
     <link rel="stylesheet" charset="utf-8" href="css/jqxStyles/styles/jqx.fresh.css"/>
     <link rel="stylesheet" href="css/myStyles/style.css"/>
     <link async href="http://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
 </head>
-<body>
-<div id="header"></div>
+<body onload="getMineralURL(); astero ();" >
+<div id="header">
+    <table class="mineralTable">
+        <tr>
+            <td>Tritanium</td>
+            <td>Pyerite</td>
+            <td>Mexallon</td>
+            <td>Isogen</td>
+            <td>Nocxium</td>
+            <td>Zydrine</td>
+            <td>Megacyte</td>
+            <td>Morphite</td>
+        </tr>
+        <tr>
+            <td><input type="text" id="trit"/></td>
+            <td><input type="text" id="pyer"/></td>
+            <td><input type="text" id="mex"/></td>
+            <td><input type="text" id="iso"/></td>
+            <td><input type="text" id="noc"/></td>
+            <td><input type="text" id="zyd"/></td>
+            <td><input type="text" id="meg"/></td>
+            <td><input type="text" id="mor"/></td>
+            <td><input type="button" id="calc1" value="Calculate" onclick="getMineralURL();"></td>
+        </tr>
+    </table>
+</div>
 <div id="left"></div>
 <div id="right"></div>
 <div id="middle">
