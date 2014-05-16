@@ -58,5 +58,5 @@ function parseXML(xml, itemID, otherItemID, otherCost) {
         });
     });
     $('#otherC').val(otherCost);
-    alert(otherCost);
+//    alert(otherCost);
 }

@@ -18,7 +18,7 @@
 
 #middle {
     margin: 20px 220px 10px 220px;
-    background-color: whitesmoke;
+    /*background-color: whitesmoke;*/
     height: 400px;
     text-align: center;
 }
@@ -35,6 +35,11 @@
     width: 200px;
     float: left;
     height: 400px;
+}
+
+.minFieldDiv {
+    margin-left: 40%;
+    padding-left: 40%;
 }
 
 /*-----------------------------------------------------------------
@@ -74,3 +79,8 @@
     /*-o-transition: all 200ms cubic-bezier(0.42,0,0.58,1);*/
     /*transition: all 200ms cubic-bezier(0.42,0,0.58,1);*/
 /*}*/
+
+input[type=text].minField{
+    /*width: 60px;*/
+    text-align: center;
+}

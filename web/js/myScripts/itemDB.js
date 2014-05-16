@@ -15,22 +15,20 @@ function astero () {
     var s = parseInt (trit1*23782 + pyer1*7964 + mex1*2794 + iso1*462 + noc1*40 + zyd1*9 + meg1*2);
     itemDB(s);
 
-    alert(s);
+//    alert(s);
 
 }
 
 function itemDB(s) {
     var sisCore = {itemID: "28758", otherID: "17938", lpCost: "14400", iskCost: "9600000"};
     var sisExp = {itemID: "28756", otherID: "18639", lpCost: "14400", iskCost: "9600000"};
-    var sisAstero = {itemID: "33468",
-                     lpCost: "30000",
-                     iskCost: "15000000",
-                     otherCost: "'" + s + "'"
-                    };
+    var sisAstero = {itemID: "33468",lpCost: "30000",  iskCost: "15000000", otherCost: "500000"};
+    var sisStratios = {itemID: "33470",lpCost: "120000",  iskCost: "30000000", otherCost: "11000000"};
     return {
         "28758": sisCore,
         "28756": sisExp,
-        "33468": sisAstero
+        "33468": sisAstero,
+        "33470": sisStratios
     };
 }
 

@@ -41,16 +41,18 @@
             <td>Morphite</td>
         </tr>
         <tr>
-            <td><input type="text" id="trit"/></td>
-            <td><input type="text" id="pyer"/></td>
-            <td><input type="text" id="mex"/></td>
-            <td><input type="text" id="iso"/></td>
-            <td><input type="text" id="noc"/></td>
-            <td><input type="text" id="zyd"/></td>
-            <td><input type="text" id="meg"/></td>
-            <td><input type="text" id="mor"/></td>
-            <td><input type="button" id="calc1" value="Calculate" onclick="getMineralURL();"></td>
+            <div class="minFieldDiv">
+            <td class="minField"><input type="text" id="trit" class="minField"/></td>
+            <td class="minField"><input type="text" id="pyer" class="minField"/></td>
+            <td class="minField"><input type="text" id="mex" class="minField"/></td>
+            <td class="minField"><input type="text" id="iso" class="minField"/></td>
+            <td class="minField"><input type="text" id="noc" class="minField"/></td>
+            <td class="minField"><input type="text" id="zyd" class="minField"/></td>
+            <td class="minField"><input type="text" id="meg" class="minField"/></td>
+            <td class="minField"><input type="text" id="mor" class="minField"/></td>
+            </div>
         </tr>
+
     </table>
 </div>
 <div id="left"></div>
