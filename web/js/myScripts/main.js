@@ -7,7 +7,8 @@
 $(document).ready(function () {
 
 
-    $("#calc").jqxButton({ width: '80', height: '30', theme: 'fresh'});
+    $("input[type=button]").jqxButton({ width: '80', height: '30', theme: 'fresh'});
+    $("#trip").jqxButton({width: '225', height: '30', theme: 'fresh'});
     $("input[type=text]").jqxInput({height: 10, width: 172, minLength: 1});
 
 

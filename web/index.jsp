@@ -21,13 +21,15 @@
     <script type="text/javascript" charset="UTF-8" src="js/myScripts/XMLscripts.js"></script>
     <script type="text/javascript" charset="UTF-8" src="js/myScripts/CalculatingScript.js"></script>
     <script type="text/javascript" charset="UTF-8" src="js/myScripts/MineralPrice.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="js/myScripts/RffXMLParse.js"></script>
 
     <link rel="stylesheet" charset="utf-8" href="css/jqxStyles/styles/jqx.base.css"/>
     <link rel="stylesheet" charset="utf-8" href="css/jqxStyles/styles/jqx.fresh.css"/>
     <link rel="stylesheet" href="css/myStyles/style.css"/>
-    <link async href="http://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+    <link async href="http://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com"
+          rel="stylesheet" type="text/css"/>
 </head>
-<body onload="getMineralURL(); astero ();" >
+<body onload="getMineralURL();">
 <div id="header">
     <table class="mineralTable">
         <tr>
@@ -105,6 +107,30 @@
         </tr>
         <tr>
             <td colspan="2"><input type="button" id="calc" value="Calculate" onclick="Calc();"></td>
+        </tr>
+    </table>
+    <table class="redFrogFreight">
+        <tr>
+            <td colspan="2">Trip Calculator by Red Frog Freight</td>
+        </tr>
+        <tr>
+            <td>Start System</td>
+            <td><input type="text" id="ss"></td>
+        </tr>
+        <tr>
+            <td>Destination</td>
+            <td><input type="text" id="dest"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" id="trip" value="Plan route and calculate reward" onclick="getRffURL();"></td>
+        </tr>
+        <tr>
+            <td>Total jumps: </td>
+            <td id="j"></td>
+        </tr>
+        <tr>
+            <td>Reward: </td>
+            <td id="rew"></td>
         </tr>
     </table>
 </div>
