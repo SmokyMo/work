@@ -22,13 +22,15 @@ function astero () {
 function itemDB(s) {
     var sisCore = {itemID: "28758", otherID: "17938", lpCost: "14400", iskCost: "9600000"};
     var sisExp = {itemID: "28756", otherID: "18639", lpCost: "14400", iskCost: "9600000"};
-    var sisAstero = {itemID: "33468",lpCost: "30000",iskCost: "15000000",otherCost: "700000"};
-    var sisStratios = {itemID: "33470",lpCost: "120000",iskCost: "30000000",otherCost: "11000000"};
+    var sisAstero = {itemID: "33468",
+                     lpCost: "30000",
+                     iskCost: "15000000",
+                     otherCost: "'" + s + "'"
+                    };
     return {
         "28758": sisCore,
         "28756": sisExp,
-        "33468": sisAstero,
-        "33470": sisStratios
+        "33468": sisAstero
     };
 }
 
